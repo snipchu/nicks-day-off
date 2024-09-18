@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=nick
+comment1.params=
+comment1.target=nick\ get()
+comment2.params=
+comment2.target=void\ getuserinput()
+comment3.params=
+comment3.target=void\ findobjects()
+comment4.params=
+comment4.target=SmoothMover\ getclosest()
+comment5.params=actor1\ actor2
+comment5.target=double\ getdistance(greenfoot.Actor,\ greenfoot.Actor)
+comment6.params=
+comment6.target=void\ act()
+numComments=7

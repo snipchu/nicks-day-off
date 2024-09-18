@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=dialognick
+comment1.params=
+comment1.target=dialognick()
+comment2.params=
+comment2.target=dialognick\ get()
+comment3.params=
+comment3.target=int\ getimg()
+comment4.params=i
+comment4.target=void\ setimg(int)
+comment5.params=num
+comment5.target=void\ show(int)
+comment6.params=
+comment6.target=void\ act()
+numComments=7

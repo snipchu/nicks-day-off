@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=esignal
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ esignal\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=i
+comment1.target=void\ setobject(SmoothMover)
+comment2.params=
+comment2.target=esignal()
+comment3.params=
+comment3.target=esignal\ get()
+comment4.params=
+comment4.target=void\ act()
+numComments=5
