@@ -47,7 +47,6 @@ public class home extends World
     }
     public void checkoutside() {
         if (background.getX() > 165) {
-            takemeback.stop();
             Greenfoot.setWorld(new outside());
         }
     }
