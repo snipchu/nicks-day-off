@@ -9,7 +9,7 @@ public class dialognick extends Actor
     static GreenfootImage dialog3 = new GreenfootImage("images/dialog-nick3.png");
     static GreenfootImage dialog4 = new GreenfootImage("images/dialog-nick4.png");
     static GreenfootImage dialog5 = new GreenfootImage("images/dialog-nick5.png");
-    
+    private static boolean shouldclose=false;
     // list of all dialog images above
     public static List<GreenfootImage> imgs = List.of(dialog0, dialog1, dialog2, dialog3, dialog4, dialog5);
     // singleton instance of dialog
@@ -24,13 +24,18 @@ public class dialognick extends Actor
     public static void show(int num) {
         dialog.setImage(imgs.get(num));
         dialog.getImage().setTransparency(255);
+        shouldclose = num==1;
     }
     
 
     public void act() {
         // hide dialog on enter key
-        if (Greenfoot.isKeyDown("enter") && getImage().getTransparency()==255) {
+        if (Greenfoot.isKeyDown("enter") && shouldclose) {
             getImage().setTransparency(0);
+            sleepFor(5);
+        } else if (Greenfoot.isKeyDown("enter") && !shouldclose) {
+            show(getimg()+1);
+            sleepFor(5);
         }
     }
 }

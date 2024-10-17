@@ -17,6 +17,7 @@ public class home extends World
     
     int verybadtimer = 0;
     public static int cutscenenum = 0;
+    
     public static int getcutscene() {return cutscenenum;}
     
     public void started() {
@@ -34,10 +35,14 @@ public class home extends World
             // playing ringtone
             ringtone.play();
             verybadtimer++;
-        } else if (verybadtimer<450) {
+        } else if (verybadtimer<300) {
             //stopping ringtone
             sleepynick.resume();
             ringtone.stop();
+            verybadtimer++;
+        } else if (verybadtimer<400) {
+            // opening dialogue
+            dialognick.get().show(0);
             verybadtimer++;
         } else {
             // ending cutscene
